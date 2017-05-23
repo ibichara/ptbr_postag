@@ -1,4 +1,7 @@
 import nltk
+
+nltk.download('mac-morpho')
+
 from nltk.corpus import mac_morpho, stopwords
 
 class pos_tagger(object):
@@ -53,7 +56,6 @@ class pos_tagger(object):
             '|+': 'contracoes e eclises',
             '|!': 'mesoclise',
         }
-	nltk.download('mac-morpho')
 
     def initialize_dataset(self):
         tagged_sentences = mac_morpho.tagged_sents()
