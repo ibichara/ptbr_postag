@@ -53,6 +53,7 @@ class pos_tagger(object):
             '|+': 'contracoes e eclises',
             '|!': 'mesoclise',
         }
+	nltk.download('mac-morpho')
 
     def initialize_dataset(self):
         tagged_sentences = mac_morpho.tagged_sents()
