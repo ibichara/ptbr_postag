@@ -1,6 +1,6 @@
 import nltk
 
-nltk.download('mac-morpho')
+nltk.download('mac_morpho')
 
 from nltk.corpus import mac_morpho, stopwords
 
