@@ -10,4 +10,5 @@ setup(
 	url = "https://github.com/ibichara/ptbr_postag",
 	download_url = "https://github.com/ibichara/ptbr_postag/archive/0.2.tar.gz",
 	keywords = ['nlp', 'postag', 'postagging'],
+	install_requires = ['nltk'],
 	classifiers = [])
