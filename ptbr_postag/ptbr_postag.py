@@ -91,4 +91,4 @@ class pos_tagger(object):
         return self.t3.tag(words)
 
     def tag_word(self, word):
-        return self.t3.tag([unicode(word)])
+        return self.t3.tag([word])
