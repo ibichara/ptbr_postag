@@ -1,12 +1,6 @@
 import nltk
 from nltk.corpus import mac_morpho, stopwords
 
-def simplify_tag(t):
-    if '+' in t:
-        return t[t.index('+')+1]
-    else:
-        return t
-
 class pos_tagger(object):
     def __init__(self):
         self.lang = 'portuguese'
@@ -70,7 +64,6 @@ class pos_tagger(object):
         self.t1 = nltk.UnigramTagger(self.train, backoff=self.t0)
         self.t2 = nltk.BigramTagger(self.train, backoff=self.t1)
         self.t3 = nltk.TrigramTagger(self.train, backoff=self.t2)
-        print self.t3.evaluate(self.test)
 
     def split_into_relevant_words(self, text, bRemoveStopwords = False):
         sentences = nltk.sent_tokenize(text, self.lang)
