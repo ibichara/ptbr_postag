@@ -1,6 +1,8 @@
 import nltk
 
 nltk.download('mac_morpho')
+nltk.download('stopwords')
+nltk.download('punkt')
 
 from nltk.corpus import mac_morpho, stopwords
 
